@@ -1,0 +1,197 @@
+{
+ "(4,2)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 7,
+  "full_float": 3.8,
+  "full_model_mean": "19/5",
+  "max_float": 3.8,
+  "max_mean": "19/5",
+  "maximiser_sizes": {
+   "6": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 3.0,
+  "second_largest_float": 3.6666666666666665,
+  "structure": "full model, uniquely"
+ },
+ "(5,2)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 13,
+  "full_float": 5.325396825396825,
+  "full_model_mean": "671/126",
+  "max_float": 5.325396825396825,
+  "max_mean": "671/126",
+  "maximiser_sizes": {
+   "10": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 5.166666666666667,
+  "second_largest_float": 5.166666666666667,
+  "structure": "full model, uniquely"
+ },
+ "(5,3)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 13,
+  "full_float": 3.2222222222222223,
+  "full_model_mean": "29/9",
+  "max_float": 3.2222222222222223,
+  "max_mean": "29/9",
+  "maximiser_sizes": {
+   "10": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 3.0833333333333335,
+  "second_largest_float": 3.0833333333333335,
+  "structure": "full model, uniquely"
+ },
+ "(6,2)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 171,
+  "full_float": 6.928571428571429,
+  "full_model_mean": "97/14",
+  "max_float": 6.928571428571429,
+  "max_mean": "97/14",
+  "maximiser_sizes": {
+   "15": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 5.5,
+  "second_largest_float": 6.904329004329003,
+  "structure": "full model, uniquely"
+ },
+ "(6,3)": {
+  "excess": "10/171",
+  "excess_float": 0.05847953216374269,
+  "fair_mechanisms": 3435,
+  "full_float": 4.302631578947368,
+  "full_model_mean": "327/76",
+  "max_float": 4.361111111111111,
+  "max_mean": "157/36",
+  "maximiser_sizes": {
+   "10": 12
+  },
+  "maximisers": 12,
+  "min_regular_float": 3.0,
+  "second_largest_float": 4.333333333333334,
+  "structure": "12 labelled copies of the 2-(6,3,2) design"
+ },
+ "(6,4)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 171,
+  "full_float": 2.9285714285714284,
+  "full_model_mean": "41/14",
+  "max_float": 2.9285714285714284,
+  "max_mean": "41/14",
+  "maximiser_sizes": {
+   "15": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 2.5,
+  "second_largest_float": 2.90909090909091,
+  "structure": "full model, uniquely"
+ },
+ "(7,2)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 931,
+  "full_float": 8.625757575757575,
+  "full_model_mean": "5693/660",
+  "max_float": 8.625757575757575,
+  "max_mean": "5693/660",
+  "maximiser_sizes": {
+   "21": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 8.35,
+  "second_largest_float": 8.577350427350426,
+  "structure": "full model, uniquely"
+ },
+ "(7,3)": {
+  "excess": "7/527",
+  "excess_float": 0.013282732447817837,
+  "fair_mechanisms": 2505121,
+  "full_float": 5.420050600885515,
+  "full_model_mean": "85691/15810",
+  "max_float": 5.433333333333334,
+  "max_mean": "163/30",
+  "maximiser_sizes": {
+   "7": 30,
+   "14": 120
+  },
+  "maximisers": 150,
+  "min_regular_float": 4.9,
+  "second_largest_float": 5.4271929824561385,
+  "structure": "30 Fano planes (lines as packages) and 120 unions of two block-disjoint Fano planes"
+ },
+ "(7,4)": {
+  "excess": "7/51",
+  "excess_float": 0.13725490196078433,
+  "fair_mechanisms": 2505121,
+  "full_float": 3.7794117647058822,
+  "full_model_mean": "257/68",
+  "max_float": 3.9166666666666665,
+  "max_mean": "47/12",
+  "maximiser_sizes": {
+   "7": 30
+  },
+  "maximisers": 30,
+  "min_regular_float": 3.416666666666667,
+  "second_largest_float": 3.8269230769230775,
+  "structure": "30 complements of Fano planes (Theorem 2.1)"
+ },
+ "(7,5)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 931,
+  "full_float": 2.75,
+  "full_model_mean": "11/4",
+  "max_float": 2.75,
+  "max_mean": "11/4",
+  "maximiser_sizes": {
+   "21": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 2.6333333333333333,
+  "second_largest_float": 2.723076923076923,
+  "structure": "full model, uniquely"
+ },
+ "(8,2)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 45935,
+  "full_float": 10.395472675472675,
+  "full_model_mean": "1003423/96525",
+  "max_float": 10.395472675472675,
+  "max_mean": "1003423/96525",
+  "maximiser_sizes": {
+   "28": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 8.333333333333332,
+  "second_largest_float": 10.381219848039072,
+  "structure": "full model, uniquely"
+ },
+ "(8,6)": {
+  "excess": "0",
+  "excess_float": 0.0,
+  "fair_mechanisms": 45935,
+  "full_float": 2.6296296296296298,
+  "full_model_mean": "71/27",
+  "max_float": 2.6296296296296298,
+  "max_mean": "71/27",
+  "maximiser_sizes": {
+   "28": 1
+  },
+  "maximisers": 1,
+  "min_regular_float": 2.333333333333333,
+  "second_largest_float": 2.6231884057971016,
+  "structure": "full model, uniquely"
+ },
+ "python": "3.14.7",
+ "status": "ALL CHECKS PASSED"
+}

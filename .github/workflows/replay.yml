@@ -1,0 +1,62 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+jobs:
+  quick:
+    name: Manifest; verify_coverage.py under python -O; comparison under the declared policy; negative control
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Run verify_coverage.py in a copy of the package (cwd = package root; standard library only)
+        run: |
+          python3 -c 'import sys; print(sys.version)'
+          for d in run neg1; do mkdir -p "$RUNNER_TEMP/$d"; cp -R code results "$RUNNER_TEMP/$d/"; done
+          cd "$RUNNER_TEMP/run"
+          python3 -I -B -O code/verify_coverage.py --output results/verification.json | tee verify.out
+          grep -q '^ALL CHECKS PASSED$' verify.out
+      - name: Compare with the recorded output
+        # Declared policy (also in README.md, ENVIRONMENT.txt and REPLAY_RECEIPT.md): the "python" field is not compared;
+        # exact rationals, integers and strings exactly; floats within absolute 1e-12 (smallest_slack 1e-9).
+        run: python3 -I .github/ci/compare_outputs.py --only verification.json "$RUNNER_TEMP/run/results" results
+      - name: Negative control under -O (seven-point design mean 47/12 replaced by 47/13)
+        run: |
+          cd "$RUNNER_TEMP/neg1"
+          sed -i 's/check((design_mean, full_mean) == (F(47, 12), F(257, 68))/check((design_mean, full_mean) == (F(47, 13), F(257, 68))/' code/verify_coverage.py
+          grep -q 'F(47, 13), F(257, 68)' code/verify_coverage.py
+          if python3 -I -B -O code/verify_coverage.py --output /dev/null > out.txt 2>&1; then echo "wrong value not detected"; exit 1; fi
+          grep -q 'CHECK FAILED: seven-point means' out.txt
+          echo "negative control detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"
+  certificate:
+    name: certify_fair_maxima.py (C enumeration, about a minute) under python -O; comparison under the declared policy
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run certify_fair_maxima.py in a copy of the package (needs cc)
+        run: |
+          cc --version | head -1
+          mkdir -p "$RUNNER_TEMP/run"; cp -R code results "$RUNNER_TEMP/run/"
+          cd "$RUNNER_TEMP/run"
+          python3 -I -B -O code/certify_fair_maxima.py --output results/fair_maxima.json | tee certify.out
+          grep -q '^ALL CHECKS PASSED$' certify.out
+      - name: Compare with the recorded output
+        # Declared policy: exact rationals, counts and structures exactly; double values within relative 1e-9.
+        run: python3 -I .github/ci/compare_outputs.py --only fair_maxima.json "$RUNNER_TEMP/run/results" results
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

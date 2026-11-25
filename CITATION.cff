@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "Extremal laws for coupon collection with group drawings"
+abstract: "Unrefereed research candidate. A collector draws random packages of s out of n coupons. When the omitted coupons can form a Steiner 2-design, sampling it is the slowest fair law at every number of draws. In every critical window n p^k -> lambda the slowest fair mean is k + min(1, lambda) + o(1), against k + 1 - e^(-lambda) for uniform sampling. No fair law is more than 1/e + (1 - gamma)/ln(n/r) draws slower on average than uniform sampling, with the limit 1/e attained. An exhaustive exact search covers all small cases. On the fast side, every law has mean at least max{x H_x, 1 + x} with x = n/s, proving the Fang-Chang conjecture with uniqueness."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-25"
+doi: "10.5281/zenodo.24534721"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24534721"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24534720"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/coupon-collection-extremal-laws"
+url: "https://evidencepress.org/releases/coupon-collection-extremal-laws/"
+license: CC0-1.0
+keywords:
+  - coupon collector
+  - group drawings
+  - Steiner designs
+  - Fano plane
+  - extremal probability
+preferred-citation:
+  type: article
+  title: "Extremal laws for coupon collection with group drawings"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24534721"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

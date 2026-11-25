@@ -1,0 +1,5 @@
+numpy==2.3.5
+matplotlib==3.10.8
+# verify_coverage.py and certify_fair_maxima.py need only the Python standard library (3.12+);
+# certify_fair_maxima.py also needs a C compiler available as `cc`.
+# numpy and matplotlib are needed only by code/make_figure.py.

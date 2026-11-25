@@ -1,0 +1,271 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 25 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review (24 November 2026), the source retrieval and reading record, the corpus overlap check, refs.bib, REVIEW_SUMMARY.md and the paper's own positioning (Sections 1 and 8). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "When an S(2,r,n) exists, uniform sampling of its blocks as omitted sets maximises P(T > j) over all balanced laws for every j, and equality at any single j >= 2 characterises the design; it is the slowest fair law in mean (seven coupons, packages of four: 47/12 against 257/68); partial-coverage analogue with higher designs",
+   "unit": "statement",
+   "paperLocation": "Theorems 3.1 and 3.4, Proposition 3.2, Example 3.3",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (lead, and separately the domain and editor roles of the internal review); works citing or extending Barak-Pelleg and Berend (arXiv:2606.28216), Grunbaum and Yaakobi (arXiv:2510.25305) and Berend and Sher (arXiv:2509.17201, 2605.06953); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "coupon collector group drawings fair sampling slowest law; Steiner design coupon collector; Fano plane coupon collecting; coupon subset collection optimal strategy s divides n; Fang Chang conjecture; Grunbaum Yaakobi coverage conjecture; probabilistic quorum intersection designs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv versions, publisher pages, the authors' copy of Fang-Chang and Finner supplied by the owner)",
+     "query": "Barak-Pelleg-Berend Introduction, Sections 2 and 5, Theorem 2.4; Grunbaum-Yaakobi Sections VII-VIII, Conjectures 2-3, Theorem 10, Remark 2; Berend-Sher both arXiv versions and the journal versions; Fang-Chang; Finner Theorem 2.1 and (3.1); Pelekis-Ramon-Wang Theorems 2.1 and 2.6; Falgas-Ravry-Larsson-Markstrom; Malkhi-Reiter-Wool-Wright Definition 3.1"
+    }
+   ],
+   "closestPriorWork": "Barak-Pelleg and Berend (Fano lines slower than the full model; PG(2,2) family); degree-two Bonferroni-type bounds (classical, no novelty claimed)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "the characterisation of the slowest fair law by Steiner 2-designs was not found; the pointwise polynomial bound is classical and credited as such"
+  },
+  {
+   "claim": "Critical windows: if n p^k -> lambda in (0, infinity) for fixed k >= 2, the slowest fair mean is k + min(1, lambda) + o(1), against k + 1 - e^(-lambda) for the full model; peak asymptotic excess 1/e at lambda = 1; every population size",
+   "unit": "statement",
+   "paperLocation": "Theorem 4.1, Lemma 4.3, Remark 4.2, Figure 1",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (lead, and separately the domain and editor roles of the internal review); works citing or extending Barak-Pelleg and Berend (arXiv:2606.28216), Grunbaum and Yaakobi (arXiv:2510.25305) and Berend and Sher (arXiv:2509.17201, 2605.06953); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "coupon collector group drawings fair sampling slowest law; Steiner design coupon collector; Fano plane coupon collecting; coupon subset collection optimal strategy s divides n; Fang Chang conjecture; Grunbaum Yaakobi coverage conjecture; probabilistic quorum intersection designs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv versions, publisher pages, the authors' copy of Fang-Chang and Finner supplied by the owner)",
+     "query": "Barak-Pelleg-Berend Introduction, Sections 2 and 5, Theorem 2.4; Grunbaum-Yaakobi Sections VII-VIII, Conjectures 2-3, Theorem 10, Remark 2; Berend-Sher both arXiv versions and the journal versions; Fang-Chang; Finner Theorem 2.1 and (3.1); Pelekis-Ramon-Wang Theorems 2.1 and 2.6; Falgas-Ravry-Larsson-Markstrom; Malkhi-Reiter-Wool-Wright Definition 3.1"
+    }
+   ],
+   "closestPriorWork": "Barak-Pelleg and Berend Theorem 2.4 (star mechanism reaches k + 1 in its windows, lambda > 1); Berend-Sher asymptotics for the full model",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the star mechanism already attains k + 1 for its parameters (credited); new: the matching upper bound, attainment for every lambda including lambda < 1, every n, and the 1/e peak"
+  },
+  {
+   "claim": "For every n and omitted size r, every fair law has mean at most 1/e + (1 - gamma)/ln(n/r) above the full model; below one draw when r <= n/2; limit 1/e attained",
+   "unit": "statement",
+   "paperLocation": "Theorem 5.4, Lemmas 5.1 and 5.3, Proposition 5.2",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (lead, and separately the domain and editor roles of the internal review); works citing or extending Barak-Pelleg and Berend (arXiv:2606.28216), Grunbaum and Yaakobi (arXiv:2510.25305) and Berend and Sher (arXiv:2509.17201, 2605.06953); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "coupon collector group drawings fair sampling slowest law; Steiner design coupon collector; Fano plane coupon collecting; coupon subset collection optimal strategy s divides n; Fang Chang conjecture; Grunbaum Yaakobi coverage conjecture; probabilistic quorum intersection designs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv versions, publisher pages, the authors' copy of Fang-Chang and Finner supplied by the owner)",
+     "query": "Barak-Pelleg-Berend Introduction, Sections 2 and 5, Theorem 2.4; Grunbaum-Yaakobi Sections VII-VIII, Conjectures 2-3, Theorem 10, Remark 2; Berend-Sher both arXiv versions and the journal versions; Fang-Chang; Finner Theorem 2.1 and (3.1); Pelekis-Ramon-Wang Theorems 2.1 and 2.6; Falgas-Ravry-Larsson-Markstrom; Malkhi-Reiter-Wool-Wright Definition 3.1"
+    }
+   ],
+   "closestPriorWork": "Barak-Pelleg and Berend (question how large the excess can be)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no quantitative bound on the excess was found"
+  },
+  {
+   "claim": "Exhaustive exact search of all fair mechanisms for n <= 7 and n = 8 with s in {2, 6}: Fano plane attains the maximum 163/30 at (7,3) among 2,505,121 fair mechanisms; (6,3) is the smallest counterexample to Grunbaum-Yaakobi Conjecture 2",
+   "unit": "object",
+   "paperLocation": "Proposition 6.1, Table 2",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (lead, and separately the domain and editor roles of the internal review); works citing or extending Barak-Pelleg and Berend (arXiv:2606.28216), Grunbaum and Yaakobi (arXiv:2510.25305) and Berend and Sher (arXiv:2509.17201, 2605.06953); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "coupon collector group drawings fair sampling slowest law; Steiner design coupon collector; Fano plane coupon collecting; coupon subset collection optimal strategy s divides n; Fang Chang conjecture; Grunbaum Yaakobi coverage conjecture; probabilistic quorum intersection designs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv versions, publisher pages, the authors' copy of Fang-Chang and Finner supplied by the owner)",
+     "query": "Barak-Pelleg-Berend Introduction, Sections 2 and 5, Theorem 2.4; Grunbaum-Yaakobi Sections VII-VIII, Conjectures 2-3, Theorem 10, Remark 2; Berend-Sher both arXiv versions and the journal versions; Fang-Chang; Finner Theorem 2.1 and (3.1); Pelekis-Ramon-Wang Theorems 2.1 and 2.6; Falgas-Ravry-Larsson-Markstrom; Malkhi-Reiter-Wool-Wright Definition 3.1"
+    }
+   ],
+   "closestPriorWork": "Barak-Pelleg and Berend (7,3) counterexample",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "exact maxima at small parameters not found"
+  },
+  {
+   "claim": "Every law on packages of size at most s has E T >= max{x H_x, 1 + x}, x = n/s; equal disjoint groups are the unique minimisers when s | n (proving the Fang-Chang conjecture and Grunbaum-Yaakobi Conjecture 3), and complementary partitions are the unique minimisers when (n - s) | n",
+   "unit": "statement",
+   "paperLocation": "Theorems 7.2, 7.3 and 7.5, Corollary 7.4",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (lead, and separately the domain and editor roles of the internal review); works citing or extending Barak-Pelleg and Berend (arXiv:2606.28216), Grunbaum and Yaakobi (arXiv:2510.25305) and Berend and Sher (arXiv:2509.17201, 2605.06953); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "coupon collector group drawings fair sampling slowest law; Steiner design coupon collector; Fano plane coupon collecting; coupon subset collection optimal strategy s divides n; Fang Chang conjecture; Grunbaum Yaakobi coverage conjecture; probabilistic quorum intersection designs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv versions, publisher pages, the authors' copy of Fang-Chang and Finner supplied by the owner)",
+     "query": "Barak-Pelleg-Berend Introduction, Sections 2 and 5, Theorem 2.4; Grunbaum-Yaakobi Sections VII-VIII, Conjectures 2-3, Theorem 10, Remark 2; Berend-Sher both arXiv versions and the journal versions; Fang-Chang; Finner Theorem 2.1 and (3.1); Pelekis-Ramon-Wang Theorems 2.1 and 2.6; Falgas-Ravry-Larsson-Markstrom; Malkhi-Reiter-Wool-Wright Definition 3.1"
+    }
+   ],
+   "closestPriorWork": "Fang and Chang (n = 2s, and the conjecture); Berend-Sher (conjecture recorded; complementary decomposition law and its mean); Pelekis-Ramon-Wang Theorem 2.6 (h = 1 product bound)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the h = 1 product inequality is Pelekis-Ramon-Wang Theorem 2.6 after Poissonisation (credited); new: Poissonisation with the log-concavity step, uniqueness and the second exact family; no earlier complete proof of the divisible case was found"
+  },
+  {
+   "claim": "Method: degree-two pointwise majorants with convexity (slow side, first two moments of the number missing); projective-hyperplane constructions with thinning and a regularisation lemma; hypergeometric negative dependence for the full model; Poisson clocks per package type with Finner's generalized Hoelder inequality (fast side); exhaustive C enumeration certified in exact rational arithmetic",
+   "unit": "method",
+   "paperLocation": "Sections 3-7",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv and general web searches up to 24 November 2026 (lead, and separately the domain and editor roles of the internal review); works citing or extending Barak-Pelleg and Berend (arXiv:2606.28216), Grunbaum and Yaakobi (arXiv:2510.25305) and Berend and Sher (arXiv:2509.17201, 2605.06953); Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "coupon collector group drawings fair sampling slowest law; Steiner design coupon collector; Fano plane coupon collecting; coupon subset collection optimal strategy s divides n; Fang Chang conjecture; Grunbaum Yaakobi coverage conjecture; probabilistic quorum intersection designs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv versions, publisher pages, the authors' copy of Fang-Chang and Finner supplied by the owner)",
+     "query": "Barak-Pelleg-Berend Introduction, Sections 2 and 5, Theorem 2.4; Grunbaum-Yaakobi Sections VII-VIII, Conjectures 2-3, Theorem 10, Remark 2; Berend-Sher both arXiv versions and the journal versions; Fang-Chang; Finner Theorem 2.1 and (3.1); Pelekis-Ramon-Wang Theorems 2.1 and 2.6; Falgas-Ravry-Larsson-Markstrom; Malkhi-Reiter-Wool-Wright Definition 3.1"
+    }
+   ],
+   "closestPriorWork": "Bonferroni-type bounds (classical); Finner (1992); Pelekis-Ramon-Wang (2017); Falgas-Ravry-Larsson-Markstrom (Poisson clocks per package type)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "standard tools, credited; their combination for the extremal questions was not found in the searched sources"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Barak-Pelleg, D. and Berend, D. (2026), Fano geometry and slow coupon collecting, arXiv:2606.28216",
+   "usedFor": "counterexample, star mechanism, open questions",
+   "readWhat": "whole paper",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://arxiv.org/abs/2606.28216"
+  },
+  {
+   "citation": "Berend, D. and Sher, T. (2026), Stochastic Models 42(3):455-468 (arXiv:2605.06953)",
+   "usedFor": "full-model asymptotics in the critical window",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1080/15326349.2026.2669925"
+  },
+  {
+   "citation": "Berend, D. and Sher, T. (2026), Stochastic Models, 1-14 (arXiv:2509.17201, both versions)",
+   "usedFor": "Fang-Chang conjecture as recorded; complementary decomposition law and its mean",
+   "readWhat": "whole paper (both arXiv versions)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1080/15326349.2026.2671340"
+  },
+  {
+   "citation": "Falgas-Ravry, V., Larsson, J. and Markstrom, K. (2016), arXiv:1601.04455",
+   "usedFor": "closest general framework; Poisson clocks per package type",
+   "readWhat": "whole paper",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://arxiv.org/abs/1601.04455"
+  },
+  {
+   "citation": "Fang, C. and Chang, E.-C. (2014), Information Processing Letters 114(12):703-705",
+   "usedFor": "n = 2s case, tail ordering, conjecture and pairing-case history",
+   "readWhat": "whole paper (authors' copy)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.ipl.2014.06.012"
+  },
+  {
+   "citation": "Finner, H. (1992), The Annals of Probability 20(4):1893-1901",
+   "usedFor": "Theorem 2.1 and (3.1) for Lemma 7.1",
+   "readWhat": "whole paper (supplied by the owner)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1214/aop/1176989534"
+  },
+  {
+   "citation": "Grunbaum, Y. and Yaakobi, E. (2025), arXiv:2510.25305v1; ISIT 2026 version",
+   "usedFor": "fair mechanisms, Conjectures 2 and 3, Theorem 10, Remark 2",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1109/ISIT62367.2026.11653923"
+  },
+  {
+   "citation": "Malkhi, D., Reiter, M. K., Wool, A. and Wright, R. N. (2001), Information and Computation 170(2):184-206",
+   "usedFor": "probabilistic quorum intersection (Definition 3.1)",
+   "readWhat": "whole paper",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1006/inco.2001.3054"
+  },
+  {
+   "citation": "Pelekis, C., Ramon, J. and Wang, Y. (2017), Indagationes Mathematicae 28(1):170-182",
+   "usedFor": "Theorems 2.1 and 2.6 (product bound)",
+   "readWhat": "whole paper",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.indag.2016.11.017"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "The critical-window result is asymptotic, converges slowly (full model 0.03 draws above its limit at n = 1600) and its construction is existential",
+   "closingQuestion": "What are quantitative rates and explicit fair mechanisms?",
+   "triedOrSearched": "finite full-model values computed exactly in code/verify_coverage.py; thinned projective construction not instantiated",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 8, rates",
+   "whyNotClosedNow": "research-level; stated as open"
+  },
+  {
+   "limitation": "Exact slowest fair law without a design known only for small n",
+   "closingQuestion": "Are pairwise balanced families always among the slowest?",
+   "triedOrSearched": "exhaustive exact search for n <= 7 and n = 8 with s in {2, 6}",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 8, finite maxima without designs",
+   "whyNotClosedNow": "search grows combinatorially"
+  },
+  {
+   "limitation": "Whether the excess over the full model can grow without bound for small packages",
+   "closingQuestion": "Is the excess bounded when s = o(n)?",
+   "triedOrSearched": "Theorem 5.4 bound grows like (1 - gamma) n/s there",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 8, small packages",
+   "whyNotClosedNow": "research-level"
+  },
+  {
+   "limitation": "Fastest law open when neither s nor n - s divides n",
+   "closingQuestion": "Is the Berend-Sher near-decomposition optimal?",
+   "triedOrSearched": "bounds max{x H_x, 1 + x} proved; no exact answer",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 8, fast side",
+   "whyNotClosedNow": "research-level"
+  },
+  {
+   "limitation": "Source-bundle checks relied on assert",
+   "closingQuestion": "Do the finite checks fail correctly under python -O?",
+   "triedOrSearched": "replaced by explicit checks; negative controls (47/12 -> 47/13, 163/30 -> 163/31) exit 1 under -O",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Novelty rests on searches of limited scope",
+   "closingQuestion": "Would further indexes change attribution?",
+   "triedOrSearched": "arXiv and web searches, cited sources read, Evidence Press corpus checked",
+   "estimatedCost": "subscription indexes",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "subscription indexes were outside the searched corpus",
+   "whyNotClosedNow": "recorded here; the paper positions its results against the sources read and claims no novelty for classical tools"
+  }
+ ],
+ "extensionScout": {
+  "by": "the internal review panel, the proof auditor, the re-reviewer and the lead",
+  "date": "2026-11-24",
+  "proposals": [
+   "exact maximum at Barak-Pelleg and Berend's own (7,3) parameters by exhaustive search",
+   "a quantitative bound on the excess over the full model",
+   "the exact minimum for the family (n - s) | n",
+   "the exact minimum when neither s nor n - s divides n",
+   "quantitative rates for the critical windows"
+  ],
+  "actions": [
+   "done: Proposition 6.1",
+   "done: Theorem 5.4",
+   "done: Theorem 7.5",
+   "not done: stated as open",
+   "not done: stated as open"
+  ]
+ }
+}

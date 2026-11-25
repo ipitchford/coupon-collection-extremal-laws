@@ -1,0 +1,18 @@
+Release replay environment (25 November 2026, macOS arm64 host)
+Interpreters (printed inside the run, not assumed):
+- `uv run --no-project --python 3.12 python3` resolved to CPython 3.14.7 through the host's python3 shim;
+  verify_coverage.py, certify_fair_maxima.py and make_figure.py ran under it. verify_coverage.py was also run under
+  CPython 3.12.11 with the same result.
+C compiler: Apple clang 21.0.0 (`cc`), used by certify_fair_maxima.py to compile code/fair_maxima.c in a temporary
+directory.
+Packages: none for the checks (standard library). make_figure.py: numpy 2.3.5, matplotlib 3.10.8 (requirements.txt).
+Working directory: the package root. Flags: python3 -I -B -O for the checks. PYTHONDONTWRITEBYTECODE=1.
+Run time on the release host: verify_coverage.py about 1 s, certify_fair_maxima.py 36 s, make_figure.py 2 s.
+GitHub CI: ubuntu-latest, actions/setup-python 3.12, system cc. Two jobs: (1) manifest, verify_coverage.py under -O,
+comparison, negative control, working tree unchanged; (2) certify_fair_maxima.py under -O and comparison.
+Comparison policy (declared before tagging; the same in CI, README.md and REPLAY_RECEIPT.md):
+- the "python" field is not compared;
+- exact rationals (strings), integers, structures and status exactly;
+- verification.json floats within absolute 1e-12 (minimum.smallest_slack within absolute 1e-9);
+- fair_maxima.json doubles within relative 1e-9 (certificate separation needed above 1e-6; observed at least 6.1e-3).
+On the release platform all four output files (two JSON, two figure files) were byte-identical to the recorded ones.
